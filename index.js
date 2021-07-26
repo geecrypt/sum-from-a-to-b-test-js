@@ -1,6 +1,12 @@
+const sum = (fromN, toN) => {
+  const result = fromN;
+  if (fromN !== toN) {
+    return result + sum(fromN + 1, toN);
+  } else {
+    return result;
+  }
+};
 
-function sum(fromN, toN) {
-  // Sum all the values from fromN up to toN
-}
+console.log(sum(3, 7));
 
 module.exports = sum;
